@@ -72,7 +72,7 @@ export default function AdminDashboard() {
         router.push('/admin/login')
         return
       }
-      const data = await response.json()
+      const data = await response.json() as ContentData
       setContent(data)
     } catch (error) {
       console.error('加载内容失败:', error)
