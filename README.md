@@ -27,6 +27,7 @@
 - ✅ 表单提交功能
 - ✅ SEO 友好
 - ✅ 部署到 Cloudflare Workers
+- ✅ **后台管理系统** - 精准控制前端每一个细节
 
 ## 开发
 
@@ -74,6 +75,47 @@ npx wrangler login
 npm run deploy
 ```
 
+## 后台管理系统
+
+### 访问地址
+- 登录页面：`/admin/login`
+- 管理后台：`/admin/dashboard`
+
+### 登录信息
+- **账号**: `admin`
+- **密码**: `admin`
+
+### 功能说明
+后台管理系统支持精准控制前端每一个细节：
+
+1. **首页内容管理**
+   - Hero 区域标题、副标题、按钮文字
+   - 技术栈标题和副标题
+   - 数据洞察（支持语言数、项目数、平台数）
+
+2. **服务内容管理**
+   - 服务页面标题和副标题
+   - 服务列表（可添加、编辑、删除）
+   - 每个服务包含：图标、标题、描述
+
+3. **关于我们管理**
+   - 页面标题
+   - 公司简介内容
+
+4. **联系方式管理**
+   - 电话
+   - 邮箱
+   - 地址
+
+5. **页脚内容管理**
+   - 公司名称
+   - 公司描述
+
+### 数据存储
+- 内容数据存储在 `data/content.json` 文件中
+- 所有更改会实时保存到文件系统
+- 前端页面会自动读取最新内容
+
 ## 项目结构
 
 ```
@@ -83,14 +125,29 @@ npm run deploy
 │   │   ├── about/        # 关于我们
 │   │   ├── services/     # 服务
 │   │   ├── contact/      # 联系我们
+│   │   ├── admin/        # 后台管理
+│   │   │   ├── login/    # 登录页面
+│   │   │   └── dashboard/ # 管理后台
+│   │   ├── api/          # API 路由
+│   │   │   ├── auth/     # 认证 API
+│   │   │   └── content/  # 内容管理 API
 │   │   ├── layout.tsx    # 根布局
 │   │   └── globals.css   # 全局样式
-│   └── components/       # 组件
-│       ├── Header.tsx    # 头部导航
-│       └── Footer.tsx    # 页脚
+│   ├── components/       # 组件
+│   │   ├── Header.tsx    # 头部导航
+│   │   ├── Footer.tsx    # 页脚
+│   │   ├── DynamicHome.tsx    # 动态首页
+│   │   ├── DynamicServices.tsx # 动态服务页
+│   │   └── DynamicFooter.tsx  # 动态页脚
+│   └── lib/              # 工具函数
+│       ├── auth.ts       # 认证工具
+│       └── content.ts    # 内容工具
+├── data/                 # 数据存储（自动创建）
+│   └── content.json      # 内容数据文件
 ├── public/               # 静态资源
 ├── next.config.ts        # Next.js 配置
 ├── open-next.config.ts   # OpenNext 配置
+├── middleware.ts         # 中间件（路由保护）
 └── wrangler.jsonc        # Wrangler 配置
 ```
 
