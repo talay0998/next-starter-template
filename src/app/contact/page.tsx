@@ -39,18 +39,39 @@ export default function Contact() {
               <h2 className="text-3xl font-bold text-gray-900 mb-6">联系方式</h2>
               
               <div className="flex gap-4">
-                <div className="text-3xl">🏢</div>
+                <div className="text-3xl">📞</div>
                 <div>
-                  <h3 className="text-xl font-semibold mb-2 text-gray-900">公司名称</h3>
-                  <p className="text-gray-700">喀什财运商标代理有限责任公司</p>
-                  <p className="text-sm text-gray-500 mt-1">Kashgar Caiyun Trademark Agency Co., Ltd.</p>
+                  <h3 className="text-xl font-semibold mb-2 text-gray-900">电话联系</h3>
+                  <div className="space-y-1">
+                    <a href="tel:15569488599" className="block text-blue-600 hover:underline text-lg font-semibold">
+                      15569488599
+                    </a>
+                    <a href="tel:15599949029" className="block text-blue-600 hover:underline text-sm">
+                      15599949029
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div className="flex gap-4">
+                <div className="text-3xl">✉️</div>
+                <div>
+                  <h3 className="text-xl font-semibold mb-2 text-gray-900">邮箱联系</h3>
+                  <div className="space-y-1">
+                    <a href="mailto:talayweb@qq.com" className="block text-blue-600 hover:underline">
+                      talayweb@qq.com
+                    </a>
+                    <a href="mailto:15569488599@wo.cn" className="block text-blue-600 hover:underline text-sm">
+                      15569488599@wo.cn
+                    </a>
+                  </div>
                 </div>
               </div>
 
               <div className="flex gap-4">
                 <div className="text-3xl">📍</div>
                 <div>
-                  <h3 className="text-xl font-semibold mb-2 text-gray-900">注册地址</h3>
+                  <h3 className="text-xl font-semibold mb-2 text-gray-900">服务地址</h3>
                   <p className="text-gray-700">
                     新疆喀什地区莎车县古勒巴格镇<br/>其格万社区古城西路69号2楼201-202室
                   </p>
@@ -58,26 +79,20 @@ export default function Contact() {
               </div>
 
               <div className="flex gap-4">
-                <div className="text-3xl">📋</div>
+                <div className="text-3xl">🌐</div>
                 <div>
-                  <h3 className="text-xl font-semibold mb-2 text-gray-900">统一社会信用代码</h3>
-                  <p className="text-gray-700">91653125MA78MQT612</p>
-                </div>
-              </div>
-
-              <div className="flex gap-4">
-                <div className="text-3xl">👤</div>
-                <div>
-                  <h3 className="text-xl font-semibold mb-2 text-gray-900">法定代表人</h3>
-                  <p className="text-gray-700">阿力木江·阿布力克木</p>
-                </div>
-              </div>
-
-              <div className="flex gap-4">
-                <div className="text-3xl">📅</div>
-                <div>
-                  <h3 className="text-xl font-semibold mb-2 text-gray-900">成立日期</h3>
-                  <p className="text-gray-700">2020年4月14日</p>
+                  <h3 className="text-xl font-semibold mb-2 text-gray-900">相关平台</h3>
+                  <div className="space-y-1">
+                    <a href="https://talay.cc" target="_blank" className="block text-blue-600 hover:underline">
+                      talay.cc - 商标平台
+                    </a>
+                    <a href="https://talay.ltd" target="_blank" className="block text-blue-600 hover:underline">
+                      talay.ltd - 企业官网
+                    </a>
+                    <a href="https://kod.talay.ltd" target="_blank" className="block text-blue-600 hover:underline">
+                      kod.talay.ltd - 开源项目
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>

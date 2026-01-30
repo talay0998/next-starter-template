@@ -8,10 +8,10 @@ export default function Footer() {
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
           <div>
-            <h3 className="text-xl font-bold text-blue-400 mb-4">财运商标</h3>
+            <h3 className="text-xl font-bold text-blue-400 mb-4">TALAY</h3>
             <p className="text-gray-400 leading-relaxed">
-              喀什财运商标代理有限责任公司<br/>
-              专业的知识产权服务提供商
+              喀什财运代理有限责任公司<br/>
+              专业软件开发 · 商标服务平台
             </p>
           </div>
 
@@ -44,14 +44,17 @@ export default function Footer() {
           <div>
             <h4 className="text-lg font-semibold mb-4">联系方式</h4>
             <ul className="space-y-2 text-gray-400">
-              <li>地址: 新疆喀什地区莎车县古勒巴格镇<br/>其格万社区古城西路69号2楼201-202室</li>
-              <li>统一社会信用代码: 91653125MA78MQT612</li>
+              <li>电话: <a href="tel:15569488599" className="hover:text-blue-400">15569488599</a></li>
+              <li>邮箱: <a href="mailto:talayweb@qq.com" className="hover:text-blue-400">talayweb@qq.com</a></li>
+              <li>地址: 新疆喀什地区莎车县古勒巴格镇其格万社区古城西路69号2楼201-202室</li>
             </ul>
           </div>
         </div>
 
         <div className="border-t border-gray-800 pt-8 text-center text-gray-400">
-          <p>&copy; {currentYear} 喀什财运商标代理有限责任公司. All rights reserved.</p>
+          <p>电话：<strong>15569488599</strong> | 邮箱：<strong>talayweb@qq.com</strong></p>
+          <p className="mt-2">地址：<strong>新疆喀什地区莎车县古勒巴格镇其格万社区古城西路69号2楼201-202室</strong></p>
+          <p className="mt-2">© {currentYear} 喀什财运代理有限责任公司 版权所有 | 新ICP备2024012863号-2</p>
         </div>
       </div>
     </footer>

@@ -15,8 +15,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-	title: "喀什财运商标代理 - 专业知识产权服务",
-	description: "喀什财运商标代理有限责任公司 - 专业的知识产权服务、商标代理、市场主体代办、软件开发",
+	title: "TALAY · 专业开发",
+	description: "专业软件开发 · 商标服务平台 · 多语言开发 · 商标服务 · 开源项目",
 };
 
 export default function RootLayout({

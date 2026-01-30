@@ -15,7 +15,7 @@ export default function Header() {
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center py-4">
           <Link href="/" className="text-2xl font-bold text-blue-600 hover:scale-105 transition-transform">
-            财运商标
+            TALAY
           </Link>
           
           <nav className={`hidden md:flex gap-8 items-center`}>

@@ -1,9 +1,39 @@
 export const metadata = {
-  title: '我们的服务 - 喀什财运商标代理',
-  description: '提供全方位的专业服务',
+  title: '我们的服务 - TALAY',
+  description: '提供全方位的专业服务 - 软件开发、商标服务、ICP备案、软著、版权等',
 }
 
 const services = [
+  {
+    icon: '📝',
+    title: '知识产权服务',
+    description: '商标代理、版权代理、专利咨询等全方位知识产权保护服务，专业团队提供高效解决方案'
+  },
+  {
+    icon: '💻',
+    title: '软件开发',
+    description: '定制化软件开发，包括AI应用、物联网系统、云计算平台等前沿技术解决方案'
+  },
+  {
+    icon: '🤖',
+    title: '人工智能',
+    description: '深度学习算法开发、智能决策系统、自然语言处理等AI核心技术应用'
+  },
+  {
+    icon: '🌐',
+    title: '互联网数据服务',
+    description: '大数据处理与分析、云计算服务、互联网安全解决方案'
+  },
+  {
+    icon: '🔐',
+    title: '软件代理与承包',
+    description: '专业软件代理服务，承接各类软件开发项目，提供技术咨询与系统集成'
+  },
+  {
+    icon: '📊',
+    title: '科技中介服务',
+    description: '科技成果转化、技术咨询服务、认证咨询等专业服务'
+  },
   {
     icon: '🌐',
     title: 'ICP备案代理',
@@ -25,44 +55,14 @@ const services = [
     description: '商标代理服务，商标查询、注册申请、续展、变更等一站式商标服务'
   },
   {
-    icon: '💻',
-    title: '软件开发',
-    description: '软件定制开发、软件外包服务，包括Web应用、移动应用、小程序等开发'
-  },
-  {
     icon: '🏢',
     title: '市场主体代办',
     description: '工商注册、市场主体登记注册代理，一站式企业注册服务'
   },
   {
-    icon: '🤖',
-    title: '人工智能应用',
-    description: '人工智能应用软件开发、AI技术解决方案，助力企业智能化转型'
-  },
-  {
     icon: '🔗',
     title: '物联网技术',
     description: '物联网技术研发、智能设备开发，连接万物互联的未来'
-  },
-  {
-    icon: '☁️',
-    title: '云计算服务',
-    description: '云计算装备技术服务、数据处理和存储支持，提供稳定可靠的技术支撑'
-  },
-  {
-    icon: '🔒',
-    title: '信息安全',
-    description: '网络与信息安全软件开发、互联网安全服务，保障您的数据安全'
-  },
-  {
-    icon: '📊',
-    title: '数据处理',
-    description: '互联网数据服务、数据处理服务，让数据创造价值'
-  },
-  {
-    icon: '🎨',
-    title: '设计服务',
-    description: '平面设计、广告设计、图文设计制作，提升品牌形象'
   }
 ]
 
